@@ -12,6 +12,12 @@
 		AC135FA4216E56EE00538C75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC135FA2216E56EE00538C75 /* Main.storyboard */; };
 		AC135FA6216E56EF00538C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC135FA5216E56EF00538C75 /* Assets.xcassets */; };
 		AC135FA9216E56EF00538C75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC135FA7216E56EF00538C75 /* LaunchScreen.storyboard */; };
+		AC135FB5216E5DA100538C75 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC135FB4216E5DA100538C75 /* Extensions.swift */; };
+		AC1C37AF21710B7600FCB3AE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1C37AE21710B7600FCB3AE /* Question.swift */; };
+		AC634020217691B800346C8E /* QuestionsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63401F217691B800346C8E /* QuestionsFactory.swift */; };
+		AC9F5BD9218BBF8100A5C3C2 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC9F5BD6218BBF8100A5C3C2 /* ProgressHUD.bundle */; };
+		AC9F5BDA218BBF8100A5C3C2 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9F5BD8218BBF8100A5C3C2 /* ProgressHUD.m */; };
+		ACA8B221217795B800825540 /* QuestionsBank.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACA8B220217795B800825540 /* QuestionsBank.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,14 @@
 		AC135FA5216E56EF00538C75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC135FA8216E56EF00538C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC135FAA216E56EF00538C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC135FB4216E5DA100538C75 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AC1C37AE21710B7600FCB3AE /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		AC63401F217691B800346C8E /* QuestionsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsFactory.swift; sourceTree = "<group>"; };
+		AC9F5BD5218BBF8000A5C3C2 /* Quiz-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quiz-Bridging-Header.h"; sourceTree = "<group>"; };
+		AC9F5BD6218BBF8100A5C3C2 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		AC9F5BD7218BBF8100A5C3C2 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		AC9F5BD8218BBF8100A5C3C2 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		ACA8B220217795B800825540 /* QuestionsBank.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = QuestionsBank.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,54 @@
 		AC135F9D216E56EE00538C75 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
-				AC135F9E216E56EE00538C75 /* AppDelegate.swift */,
-				AC135FA0216E56EE00538C75 /* ViewController.swift */,
-				AC135FA2216E56EE00538C75 /* Main.storyboard */,
-				AC135FA5216E56EF00538C75 /* Assets.xcassets */,
-				AC135FA7216E56EF00538C75 /* LaunchScreen.storyboard */,
-				AC135FAA216E56EF00538C75 /* Info.plist */,
+				AC135FB2216E596D00538C75 /* Controller */,
+				AC135FB1216E596700538C75 /* View */,
+				AC135FB0216E596000538C75 /* Model */,
+				AC135FB3216E597A00538C75 /* Supporting Files */,
 			);
 			path = Quiz;
+			sourceTree = "<group>";
+		};
+		AC135FB0216E596000538C75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC1C37AE21710B7600FCB3AE /* Question.swift */,
+				AC63401F217691B800346C8E /* QuestionsFactory.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC135FB1216E596700538C75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC135FA2216E56EE00538C75 /* Main.storyboard */,
+				AC135FA5216E56EF00538C75 /* Assets.xcassets */,
+				AC135FB4216E5DA100538C75 /* Extensions.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC135FB2216E596D00538C75 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC135F9E216E56EE00538C75 /* AppDelegate.swift */,
+				AC135FA0216E56EE00538C75 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AC135FB3216E597A00538C75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC9F5BD6218BBF8100A5C3C2 /* ProgressHUD.bundle */,
+				AC9F5BD7218BBF8100A5C3C2 /* ProgressHUD.h */,
+				AC9F5BD8218BBF8100A5C3C2 /* ProgressHUD.m */,
+				AC135FA7216E56EF00538C75 /* LaunchScreen.storyboard */,
+				AC135FAA216E56EF00538C75 /* Info.plist */,
+				ACA8B220217795B800825540 /* QuestionsBank.plist */,
+				AC9F5BD5218BBF8000A5C3C2 /* Quiz-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +150,7 @@
 				TargetAttributes = {
 					AC135F9A216E56EE00538C75 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -122,8 +177,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA8B221217795B800825540 /* QuestionsBank.plist in Resources */,
 				AC135FA9216E56EF00538C75 /* LaunchScreen.storyboard in Resources */,
 				AC135FA6216E56EF00538C75 /* Assets.xcassets in Resources */,
+				AC9F5BD9218BBF8100A5C3C2 /* ProgressHUD.bundle in Resources */,
 				AC135FA4216E56EE00538C75 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +192,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC9F5BDA218BBF8100A5C3C2 /* ProgressHUD.m in Sources */,
 				AC135FA1216E56EE00538C75 /* ViewController.swift in Sources */,
+				AC634020217691B800346C8E /* QuestionsFactory.swift in Sources */,
+				AC1C37AF21710B7600FCB3AE /* Question.swift in Sources */,
+				AC135FB5216E5DA100538C75 /* Extensions.swift in Sources */,
 				AC135F9F216E56EE00538C75 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LX4P693W2D;
 				INFOPLIST_FILE = Quiz/Info.plist;
@@ -291,8 +353,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tk.cristianlopez.Quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Quiz/Supporting Files/Quiz-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -300,6 +364,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LX4P693W2D;
 				INFOPLIST_FILE = Quiz/Info.plist;
@@ -309,8 +374,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tk.cristianlopez.Quiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Quiz/Supporting Files/Quiz-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
